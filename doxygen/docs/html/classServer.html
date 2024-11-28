@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VServer: Класс Server</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classServer-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Server</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей.  
+ <a href="classServer.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="code_2server_8h_source.html">server.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae5bfcabb5af26d249ade89eaea3747a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#ae5bfcabb5af26d249ade89eaea3747a2">Server</a> (const string &amp;address, uint16_t port, const map&lt; string, string &gt; &amp;users)</td></tr>
+<tr class="memdesc:ae5bfcabb5af26d249ade89eaea3747a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор <a class="el" href="classServer.html" title="Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей.">Server</a>.  <a href="classServer.html#ae5bfcabb5af26d249ade89eaea3747a2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5bfcabb5af26d249ade89eaea3747a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f29703e1e449f7e37c7599d122ae81"><td class="memItemLeft" align="right" valign="top">string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#ae5f29703e1e449f7e37c7599d122ae81">getAddress</a> ()</td></tr>
+<tr class="memdesc:ae5f29703e1e449f7e37c7599d122ae81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает адрес сервера.  <a href="classServer.html#ae5f29703e1e449f7e37c7599d122ae81">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5f29703e1e449f7e37c7599d122ae81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9474b488bb1768f05cea4da80bc221e4"><td class="memItemLeft" align="right" valign="top">uint16_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a9474b488bb1768f05cea4da80bc221e4">getPort</a> ()</td></tr>
+<tr class="memdesc:a9474b488bb1768f05cea4da80bc221e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает порт сервера.  <a href="classServer.html#a9474b488bb1768f05cea4da80bc221e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9474b488bb1768f05cea4da80bc221e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b6be51b26ea83409e327032f17bf2b"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a16b6be51b26ea83409e327032f17bf2b">getUsers</a> ()</td></tr>
+<tr class="memdesc:a16b6be51b26ea83409e327032f17bf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает логины и пароли пользователей.  <a href="classServer.html#a16b6be51b26ea83409e327032f17bf2b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a16b6be51b26ea83409e327032f17bf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7517710dd809ba4d965eb83801fd05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#aaa7517710dd809ba4d965eb83801fd05">startup</a> ()</td></tr>
+<tr class="memdesc:aaa7517710dd809ba4d965eb83801fd05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает сервер.  <a href="classServer.html#aaa7517710dd809ba4d965eb83801fd05">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaa7517710dd809ba4d965eb83801fd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28be9df75b3a622f95297ebf812f83f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a28be9df75b3a622f95297ebf812f83f8">shutdown</a> ()</td></tr>
+<tr class="memdesc:a28be9df75b3a622f95297ebf812f83f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останавливает сервер.  <a href="classServer.html#a28be9df75b3a622f95297ebf812f83f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a28be9df75b3a622f95297ebf812f83f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd7069e79b4d5268f0947079e1af54a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a0bd7069e79b4d5268f0947079e1af54a">connect</a> ()</td></tr>
+<tr class="memdesc:a0bd7069e79b4d5268f0947079e1af54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ожидает подключения клиента.  <a href="classServer.html#a0bd7069e79b4d5268f0947079e1af54a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0bd7069e79b4d5268f0947079e1af54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188dcac0307d35339dca155de6c4568c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a188dcac0307d35339dca155de6c4568c">authentication</a> ()</td></tr>
+<tr class="memdesc:a188dcac0307d35339dca155de6c4568c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аутентифицирует клиента.  <a href="classServer.html#a188dcac0307d35339dca155de6c4568c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a188dcac0307d35339dca155de6c4568c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08a03b67bc5070715742278c69f4a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#ae08a03b67bc5070715742278c69f4a1e">averange</a> ()</td></tr>
+<tr class="memdesc:ae08a03b67bc5070715742278c69f4a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет среднее арифметическое значений, полученных от клиента.  <a href="classServer.html#ae08a03b67bc5070715742278c69f4a1e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae08a03b67bc5070715742278c69f4a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bfcabb5af26d249ade89eaea3747a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#ae5bfcabb5af26d249ade89eaea3747a2">Server</a> (const string &amp;address, uint16_t port, const map&lt; string, string &gt; &amp;users)</td></tr>
+<tr class="memdesc:ae5bfcabb5af26d249ade89eaea3747a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор <a class="el" href="classServer.html" title="Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей.">Server</a>.  <a href="classServer.html#ae5bfcabb5af26d249ade89eaea3747a2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5bfcabb5af26d249ade89eaea3747a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f29703e1e449f7e37c7599d122ae81"><td class="memItemLeft" align="right" valign="top">string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#ae5f29703e1e449f7e37c7599d122ae81">getAddress</a> ()</td></tr>
+<tr class="memdesc:ae5f29703e1e449f7e37c7599d122ae81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает адрес сервера.  <a href="classServer.html#ae5f29703e1e449f7e37c7599d122ae81">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5f29703e1e449f7e37c7599d122ae81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9474b488bb1768f05cea4da80bc221e4"><td class="memItemLeft" align="right" valign="top">uint16_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a9474b488bb1768f05cea4da80bc221e4">getPort</a> ()</td></tr>
+<tr class="memdesc:a9474b488bb1768f05cea4da80bc221e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает порт сервера.  <a href="classServer.html#a9474b488bb1768f05cea4da80bc221e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9474b488bb1768f05cea4da80bc221e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b6be51b26ea83409e327032f17bf2b"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a16b6be51b26ea83409e327032f17bf2b">getUsers</a> ()</td></tr>
+<tr class="memdesc:a16b6be51b26ea83409e327032f17bf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает логины и пароли пользователей.  <a href="classServer.html#a16b6be51b26ea83409e327032f17bf2b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a16b6be51b26ea83409e327032f17bf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7517710dd809ba4d965eb83801fd05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#aaa7517710dd809ba4d965eb83801fd05">startup</a> ()</td></tr>
+<tr class="memdesc:aaa7517710dd809ba4d965eb83801fd05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает сервер.  <a href="classServer.html#aaa7517710dd809ba4d965eb83801fd05">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaa7517710dd809ba4d965eb83801fd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28be9df75b3a622f95297ebf812f83f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a28be9df75b3a622f95297ebf812f83f8">shutdown</a> ()</td></tr>
+<tr class="memdesc:a28be9df75b3a622f95297ebf812f83f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останавливает сервер.  <a href="classServer.html#a28be9df75b3a622f95297ebf812f83f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a28be9df75b3a622f95297ebf812f83f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd7069e79b4d5268f0947079e1af54a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a0bd7069e79b4d5268f0947079e1af54a">connect</a> ()</td></tr>
+<tr class="memdesc:a0bd7069e79b4d5268f0947079e1af54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ожидает подключения клиента.  <a href="classServer.html#a0bd7069e79b4d5268f0947079e1af54a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0bd7069e79b4d5268f0947079e1af54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188dcac0307d35339dca155de6c4568c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#a188dcac0307d35339dca155de6c4568c">authentication</a> ()</td></tr>
+<tr class="memdesc:a188dcac0307d35339dca155de6c4568c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аутентифицирует клиента.  <a href="classServer.html#a188dcac0307d35339dca155de6c4568c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a188dcac0307d35339dca155de6c4568c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08a03b67bc5070715742278c69f4a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html#ae08a03b67bc5070715742278c69f4a1e">averange</a> ()</td></tr>
+<tr class="memdesc:ae08a03b67bc5070715742278c69f4a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет среднее арифметическое значений, полученных от клиента.  <a href="classServer.html#ae08a03b67bc5070715742278c69f4a1e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae08a03b67bc5070715742278c69f4a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ae5bfcabb5af26d249ade89eaea3747a2" name="ae5bfcabb5af26d249ade89eaea3747a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5bfcabb5af26d249ade89eaea3747a2">&#9670;&nbsp;</a></span>Server() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Server::Server </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const map&lt; string, string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>users</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор <a class="el" href="classServer.html" title="Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей.">Server</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>Адрес сервера. </td></tr>
+    <tr><td class="paramname">port</td><td>Порт сервера. </td></tr>
+    <tr><td class="paramname">users</td><td>Логины и пароли пользователей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae5bfcabb5af26d249ade89eaea3747a2" name="ae5bfcabb5af26d249ade89eaea3747a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5bfcabb5af26d249ade89eaea3747a2">&#9670;&nbsp;</a></span>Server() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Server::Server </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const map&lt; string, string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>users</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор <a class="el" href="classServer.html" title="Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей.">Server</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>Адрес сервера. </td></tr>
+    <tr><td class="paramname">port</td><td>Порт сервера. </td></tr>
+    <tr><td class="paramname">users</td><td>Логины и пароли пользователей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a188dcac0307d35339dca155de6c4568c" name="a188dcac0307d35339dca155de6c4568c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188dcac0307d35339dca155de6c4568c">&#9670;&nbsp;</a></span>authentication() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::authentication </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Аутентифицирует клиента. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRecvDataError.html" title="Ошибка получения данных.">RecvDataError</a></td><td>Если данные не могут быть получены от клиента. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classInvalidAuthDataFormatError.html" title="Ошибка некорректного формата данных аутентификации.">InvalidAuthDataFormatError</a></td><td>Если формат данных аутентификации некорректен. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classInvalidLoginOrPasswordError.html" title="Ошибка некорректного логина или пароля.">InvalidLoginOrPasswordError</a></td><td>Если логин или пароль некорректны. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a188dcac0307d35339dca155de6c4568c" name="a188dcac0307d35339dca155de6c4568c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188dcac0307d35339dca155de6c4568c">&#9670;&nbsp;</a></span>authentication() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::authentication </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Аутентифицирует клиента. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRecvDataError.html" title="Ошибка получения данных.">RecvDataError</a></td><td>Если данные не могут быть получены от клиента. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classInvalidAuthDataFormatError.html" title="Ошибка некорректного формата данных аутентификации.">InvalidAuthDataFormatError</a></td><td>Если формат данных аутентификации некорректен. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classInvalidLoginOrPasswordError.html" title="Ошибка некорректного логина или пароля.">InvalidLoginOrPasswordError</a></td><td>Если логин или пароль некорректны. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae08a03b67bc5070715742278c69f4a1e" name="ae08a03b67bc5070715742278c69f4a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08a03b67bc5070715742278c69f4a1e">&#9670;&nbsp;</a></span>averange() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::averange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет среднее арифметическое значений, полученных от клиента. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRecvDataError.html" title="Ошибка получения данных.">RecvDataError</a></td><td>Если данные не могут быть получены от клиента. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classSendDataError.html" title="Ошибка отправки данных.">SendDataError</a></td><td>Если данные не могут быть отправлены клиенту. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae08a03b67bc5070715742278c69f4a1e" name="ae08a03b67bc5070715742278c69f4a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08a03b67bc5070715742278c69f4a1e">&#9670;&nbsp;</a></span>averange() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::averange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет среднее арифметическое значений, полученных от клиента. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRecvDataError.html" title="Ошибка получения данных.">RecvDataError</a></td><td>Если данные не могут быть получены от клиента. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classSendDataError.html" title="Ошибка отправки данных.">SendDataError</a></td><td>Если данные не могут быть отправлены клиенту. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0bd7069e79b4d5268f0947079e1af54a" name="a0bd7069e79b4d5268f0947079e1af54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd7069e79b4d5268f0947079e1af54a">&#9670;&nbsp;</a></span>connect() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ожидает подключения клиента. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classAcceptConnectionError.html" title="Ошибка принятия соединения.">AcceptConnectionError</a></td><td>Если подключение не может быть принято. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0bd7069e79b4d5268f0947079e1af54a" name="a0bd7069e79b4d5268f0947079e1af54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd7069e79b4d5268f0947079e1af54a">&#9670;&nbsp;</a></span>connect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ожидает подключения клиента. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classAcceptConnectionError.html" title="Ошибка принятия соединения.">AcceptConnectionError</a></td><td>Если подключение не может быть принято. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae5f29703e1e449f7e37c7599d122ae81" name="ae5f29703e1e449f7e37c7599d122ae81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f29703e1e449f7e37c7599d122ae81">&#9670;&nbsp;</a></span>getAddress() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string &amp; Server::getAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает адрес сервера. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>string&amp; Адрес сервера. </dd></dl>
+
+</div>
+</div>
+<a id="ae5f29703e1e449f7e37c7599d122ae81" name="ae5f29703e1e449f7e37c7599d122ae81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f29703e1e449f7e37c7599d122ae81">&#9670;&nbsp;</a></span>getAddress() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string &amp; Server::getAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает адрес сервера. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>string&amp; Адрес сервера. </dd></dl>
+
+</div>
+</div>
+<a id="a9474b488bb1768f05cea4da80bc221e4" name="a9474b488bb1768f05cea4da80bc221e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9474b488bb1768f05cea4da80bc221e4">&#9670;&nbsp;</a></span>getPort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t &amp; Server::getPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает порт сервера. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>uint16_t&amp; Порт сервера. </dd></dl>
+
+</div>
+</div>
+<a id="a9474b488bb1768f05cea4da80bc221e4" name="a9474b488bb1768f05cea4da80bc221e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9474b488bb1768f05cea4da80bc221e4">&#9670;&nbsp;</a></span>getPort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t &amp; Server::getPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает порт сервера. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>uint16_t&amp; Порт сервера. </dd></dl>
+
+</div>
+</div>
+<a id="a16b6be51b26ea83409e327032f17bf2b" name="a16b6be51b26ea83409e327032f17bf2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b6be51b26ea83409e327032f17bf2b">&#9670;&nbsp;</a></span>getUsers() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, string &gt; &amp; Server::getUsers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает логины и пароли пользователей. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>map&lt;string, string&gt;&amp; Логины и пароли пользователей. </dd></dl>
+
+</div>
+</div>
+<a id="a16b6be51b26ea83409e327032f17bf2b" name="a16b6be51b26ea83409e327032f17bf2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b6be51b26ea83409e327032f17bf2b">&#9670;&nbsp;</a></span>getUsers() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, string &gt; &amp; Server::getUsers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает логины и пароли пользователей. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>map&lt;string, string&gt;&amp; Логины и пароли пользователей. </dd></dl>
+
+</div>
+</div>
+<a id="a28be9df75b3a622f95297ebf812f83f8" name="a28be9df75b3a622f95297ebf812f83f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28be9df75b3a622f95297ebf812f83f8">&#9670;&nbsp;</a></span>shutdown() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Останавливает сервер. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classShutdownSocketError.html" title="Ошибка завершения работы сокета.">ShutdownSocketError</a></td><td>Если сокет не может быть корректно закрыт. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28be9df75b3a622f95297ebf812f83f8" name="a28be9df75b3a622f95297ebf812f83f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28be9df75b3a622f95297ebf812f83f8">&#9670;&nbsp;</a></span>shutdown() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Останавливает сервер. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classShutdownSocketError.html" title="Ошибка завершения работы сокета.">ShutdownSocketError</a></td><td>Если сокет не может быть корректно закрыт. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa7517710dd809ba4d965eb83801fd05" name="aaa7517710dd809ba4d965eb83801fd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7517710dd809ba4d965eb83801fd05">&#9670;&nbsp;</a></span>startup() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::startup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запускает сервер. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classCreateSocketError.html" title="Ошибка создания сокета.">CreateSocketError</a></td><td>Если сокет не может быть создан. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classBindSocketError.html" title="Ошибка привязки сокета.">BindSocketError</a></td><td>Если сокет не может быть привязан к адресу. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classListenSocketError.html" title="Ошибка прослушивания сокета.">ListenSocketError</a></td><td>Если сокет не может быть переведен в режим прослушивания. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa7517710dd809ba4d965eb83801fd05" name="aaa7517710dd809ba4d965eb83801fd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7517710dd809ba4d965eb83801fd05">&#9670;&nbsp;</a></span>startup() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::startup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запускает сервер. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classCreateSocketError.html" title="Ошибка создания сокета.">CreateSocketError</a></td><td>Если сокет не может быть создан. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classBindSocketError.html" title="Ошибка привязки сокета.">BindSocketError</a></td><td>Если сокет не может быть привязан к адресу. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classListenSocketError.html" title="Ошибка прослушивания сокета.">ListenSocketError</a></td><td>Если сокет не может быть переведен в режим прослушивания. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>/home/student/Документы/busigin/MUBypass/doxygen/code/<a class="el" href="code_2server_8h_source.html">server.h</a></li>
+<li>/home/student/Документы/busigin/MUBypass/doxygen/unit/<a class="el" href="unit_2server_8h_source.html">server.h</a></li>
+<li>/home/student/Документы/busigin/MUBypass/doxygen/code/server.cpp</li>
+<li>/home/student/Документы/busigin/MUBypass/doxygen/unit/server.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

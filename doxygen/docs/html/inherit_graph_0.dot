@@ -1,0 +1,34 @@
+digraph "Иерархия классов. Графический вид."
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="UnknownError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUnknownError.html",tooltip="Базовый класс для всех ошибок."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AcceptConnectionError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAcceptConnectionError.html",tooltip="Ошибка принятия соединения."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BindSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBindSocketError.html",tooltip="Ошибка привязки сокета."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CreateSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCreateSocketError.html",tooltip="Ошибка создания сокета."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="InvalidArgumentError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidArgumentError.html",tooltip="Ошибка некорректного аргумента."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="InvalidAuthDataFormatError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidAuthDataFormatError.html",tooltip="Ошибка некорректного формата данных аутентификации."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="InvalidLineFormat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidLineFormat.html",tooltip="Ошибка некорректного формата строки."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="InvalidLoginOrPasswordError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidLoginOrPasswordError.html",tooltip="Ошибка некорректного логина или пароля."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ListenSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classListenSocketError.html",tooltip="Ошибка прослушивания сокета."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ReadWriteError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classReadWriteError.html",tooltip="Ошибка чтения/записи."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="RecvDataError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRecvDataError.html",tooltip="Ошибка получения данных."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="SendDataError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSendDataError.html",tooltip="Ошибка отправки данных."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="ShutdownSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShutdownSocketError.html",tooltip="Ошибка завершения работы сокета."];
+}

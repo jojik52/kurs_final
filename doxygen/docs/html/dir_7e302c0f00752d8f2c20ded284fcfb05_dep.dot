@@ -1,0 +1,16 @@
+digraph "/home/student/Документы/busigin/MUBypass/doxygen"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_c057549a5cc9bb0bc03389808a6a9091 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="MUBypass", fontname="Helvetica", fontsize="10", URL="dir_c057549a5cc9bb0bc03389808a6a9091.html"]
+  subgraph clusterdir_7e302c0f00752d8f2c20ded284fcfb05 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_7e302c0f00752d8f2c20ded284fcfb05.html"]
+    dir_7e302c0f00752d8f2c20ded284fcfb05 [shape=plaintext, label="doxygen"];
+  dir_c7bcc4426407ccb96a5a7fb8c7f046b0 [shape=box, label="code", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_c7bcc4426407ccb96a5a7fb8c7f046b0.html"];
+  dir_046b05748ced62b5ba63113e6d7f3c81 [shape=box, label="unit", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_046b05748ced62b5ba63113e6d7f3c81.html"];
+  }
+  }
+}

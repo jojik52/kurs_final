@@ -1,0 +1,263 @@
+\hypertarget{classUnknownError}{}\doxysection{Класс Unknown\+Error}
+\label{classUnknownError}\index{UnknownError@{UnknownError}}
+
+
+Базовый класс для всех ошибок.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+
+
+Граф наследования\+:Unknown\+Error\+:
+% FIG 0
+
+
+Граф связей класса Unknown\+Error\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUnknownError_ac0397d4b5abc79c788781b880e9bd95b}{Unknown\+Error}} (const string \&func, bool is\+\_\+critical=false)
+\begin{DoxyCompactList}\small\item\em Конструктор \mbox{\hyperlink{classUnknownError}{Unknown\+Error}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUnknownError_a9bde24d8a094388cc5d7be65dace0f48}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Получает имя ошибки. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUnknownError_ac874b3ce5720bb39429dbe9ea367b900}{get\+Func}} () const
+\begin{DoxyCompactList}\small\item\em Получает имя функции, в которой возникла ошибка. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUnknownError_a89471dc5a247358995046d4ba1278fd0}{get\+Message}} () const
+\begin{DoxyCompactList}\small\item\em Получает сообщение об ошибке. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classUnknownError_a2be1e84e9e03445a62b5329a881c698e}{get\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Получает время возникновения ошибки. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUnknownError_a31da115137d20269085dca79a32ea646}{is\+Critical}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли ошибка критической. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classUnknownError_adb4d4d2d7c58f78f0cc8cbef3980ff20}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Получает сообщение об ошибке для вывода. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUnknownError_ac0397d4b5abc79c788781b880e9bd95b}{Unknown\+Error}} (const string \&func, bool is\+\_\+critical=false)
+\begin{DoxyCompactList}\small\item\em Конструктор \mbox{\hyperlink{classUnknownError}{Unknown\+Error}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUnknownError_a9bde24d8a094388cc5d7be65dace0f48}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Получает имя ошибки. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUnknownError_ac874b3ce5720bb39429dbe9ea367b900}{get\+Func}} () const
+\begin{DoxyCompactList}\small\item\em Получает имя функции, в которой возникла ошибка. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUnknownError_a89471dc5a247358995046d4ba1278fd0}{get\+Message}} () const
+\begin{DoxyCompactList}\small\item\em Получает сообщение об ошибке. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classUnknownError_a2be1e84e9e03445a62b5329a881c698e}{get\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Получает время возникновения ошибки. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUnknownError_a31da115137d20269085dca79a32ea646}{is\+Critical}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли ошибка критической. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classUnknownError_adb4d4d2d7c58f78f0cc8cbef3980ff20}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Получает сообщение об ошибке для вывода. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUnknownError_ad09fbc3eff1092925ddeafa28653d0a8}\label{classUnknownError_ad09fbc3eff1092925ddeafa28653d0a8}} 
+string {\bfseries name} = \char`\"{}Unknown\+Error\char`\"{}
+\begin{DoxyCompactList}\small\item\em Имя ошибки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Базовый класс для всех ошибок. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classUnknownError_ac0397d4b5abc79c788781b880e9bd95b}\label{classUnknownError_ac0397d4b5abc79c788781b880e9bd95b}} 
+\index{UnknownError@{UnknownError}!UnknownError@{UnknownError}}
+\index{UnknownError@{UnknownError}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{UnknownError()}{UnknownError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Unknown\+Error\+::\+Unknown\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{func,  }\item[{bool}]{is\+\_\+critical = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор \mbox{\hyperlink{classUnknownError}{Unknown\+Error}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func} & Имя функции, в которой возникла ошибка. \\
+\hline
+{\em is\+\_\+critical} & Флаг критичности ошибки. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnknownError_ac0397d4b5abc79c788781b880e9bd95b}\label{classUnknownError_ac0397d4b5abc79c788781b880e9bd95b}} 
+\index{UnknownError@{UnknownError}!UnknownError@{UnknownError}}
+\index{UnknownError@{UnknownError}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{UnknownError()}{UnknownError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Unknown\+Error\+::\+Unknown\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{func,  }\item[{bool}]{is\+\_\+critical = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор \mbox{\hyperlink{classUnknownError}{Unknown\+Error}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func} & Имя функции, в которой возникла ошибка. \\
+\hline
+{\em is\+\_\+critical} & Флаг критичности ошибки. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classUnknownError_ac874b3ce5720bb39429dbe9ea367b900}\label{classUnknownError_ac874b3ce5720bb39429dbe9ea367b900}} 
+\index{UnknownError@{UnknownError}!getFunc@{getFunc}}
+\index{getFunc@{getFunc}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getFunc()}{getFunc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Unknown\+Error\+::get\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает имя функции, в которой возникла ошибка. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя функции. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_ac874b3ce5720bb39429dbe9ea367b900}\label{classUnknownError_ac874b3ce5720bb39429dbe9ea367b900}} 
+\index{UnknownError@{UnknownError}!getFunc@{getFunc}}
+\index{getFunc@{getFunc}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getFunc()}{getFunc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Unknown\+Error\+::get\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает имя функции, в которой возникла ошибка. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя функции. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a89471dc5a247358995046d4ba1278fd0}\label{classUnknownError_a89471dc5a247358995046d4ba1278fd0}} 
+\index{UnknownError@{UnknownError}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Unknown\+Error\+::get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает сообщение об ошибке. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a89471dc5a247358995046d4ba1278fd0}\label{classUnknownError_a89471dc5a247358995046d4ba1278fd0}} 
+\index{UnknownError@{UnknownError}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Unknown\+Error\+::get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает сообщение об ошибке. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a9bde24d8a094388cc5d7be65dace0f48}\label{classUnknownError_a9bde24d8a094388cc5d7be65dace0f48}} 
+\index{UnknownError@{UnknownError}!getName@{getName}}
+\index{getName@{getName}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Unknown\+Error\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает имя ошибки. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя ошибки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a9bde24d8a094388cc5d7be65dace0f48}\label{classUnknownError_a9bde24d8a094388cc5d7be65dace0f48}} 
+\index{UnknownError@{UnknownError}!getName@{getName}}
+\index{getName@{getName}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Unknown\+Error\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает имя ошибки. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя ошибки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a2be1e84e9e03445a62b5329a881c698e}\label{classUnknownError_a2be1e84e9e03445a62b5329a881c698e}} 
+\index{UnknownError@{UnknownError}!getTime@{getTime}}
+\index{getTime@{getTime}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily time\+\_\+t Unknown\+Error\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает время возникновения ошибки. 
+
+\begin{DoxyReturn}{Возвращает}
+Время возникновения ошибки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a2be1e84e9e03445a62b5329a881c698e}\label{classUnknownError_a2be1e84e9e03445a62b5329a881c698e}} 
+\index{UnknownError@{UnknownError}!getTime@{getTime}}
+\index{getTime@{getTime}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily time\+\_\+t Unknown\+Error\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получает время возникновения ошибки. 
+
+\begin{DoxyReturn}{Возвращает}
+Время возникновения ошибки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a31da115137d20269085dca79a32ea646}\label{classUnknownError_a31da115137d20269085dca79a32ea646}} 
+\index{UnknownError@{UnknownError}!isCritical@{isCritical}}
+\index{isCritical@{isCritical}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{isCritical()}{isCritical()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Unknown\+Error\+::is\+Critical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли ошибка критической. 
+
+\begin{DoxyReturn}{Возвращает}
+true, если ошибка критическая, иначе false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_a31da115137d20269085dca79a32ea646}\label{classUnknownError_a31da115137d20269085dca79a32ea646}} 
+\index{UnknownError@{UnknownError}!isCritical@{isCritical}}
+\index{isCritical@{isCritical}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{isCritical()}{isCritical()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Unknown\+Error\+::is\+Critical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли ошибка критической. 
+
+\begin{DoxyReturn}{Возвращает}
+true, если ошибка критическая, иначе false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_adb4d4d2d7c58f78f0cc8cbef3980ff20}\label{classUnknownError_adb4d4d2d7c58f78f0cc8cbef3980ff20}} 
+\index{UnknownError@{UnknownError}!what@{what}}
+\index{what@{what}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const char $\ast$ Unknown\+Error\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Получает сообщение об ошибке для вывода. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnknownError_adb4d4d2d7c58f78f0cc8cbef3980ff20}\label{classUnknownError_adb4d4d2d7c58f78f0cc8cbef3980ff20}} 
+\index{UnknownError@{UnknownError}!what@{what}}
+\index{what@{what}!UnknownError@{UnknownError}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char $\ast$ Unknown\+Error\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Получает сообщение об ошибке для вывода. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/code/errors.\+h\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/unit/errors.\+h\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/code/errors.\+cpp\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/unit/errors.\+cpp\end{DoxyCompactItemize}

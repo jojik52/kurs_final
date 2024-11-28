@@ -1,0 +1,57 @@
+\hypertarget{unit_2server_8h_source}{}\doxysection{server.\+h}
+\label{unit_2server_8h_source}\index{/home/student/Документы/busigin/MUBypass/doxygen/unit/server.h@{/home/student/Документы/busigin/MUBypass/doxygen/unit/server.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SERVER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SERVER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}sha1.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}errors.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <arpa/inet.h>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <sys/socket.h>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <netinet/in.h>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26 \textcolor{keyword}{class }\mbox{\hyperlink{classServer}{Server}}}
+\DoxyCodeLine{27 \{}
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{35     \mbox{\hyperlink{classServer_ae5bfcabb5af26d249ade89eaea3747a2}{Server}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&address, uint16\_t port, \textcolor{keyword}{const} map<string, string> \&users);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{string}\& \mbox{\hyperlink{classServer_ae5f29703e1e449f7e37c7599d122ae81}{getAddress}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47     uint16\_t\& \mbox{\hyperlink{classServer_a9474b488bb1768f05cea4da80bc221e4}{getPort}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{53     map<string, string>\& \mbox{\hyperlink{classServer_a16b6be51b26ea83409e327032f17bf2b}{getUsers}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{classServer_aaa7517710dd809ba4d965eb83801fd05}{startup}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{classServer_a28be9df75b3a622f95297ebf812f83f8}{shutdown}}();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{classServer_a0bd7069e79b4d5268f0947079e1af54a}{connect}}();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{classServer_a188dcac0307d35339dca155de6c4568c}{authentication}}();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{88     \textcolor{keywordtype}{void} \mbox{\hyperlink{classServer_ae08a03b67bc5070715742278c69f4a1e}{averange}}();}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 \textcolor{keyword}{private}:}
+\DoxyCodeLine{91     \textcolor{keywordtype}{string} address;            }
+\DoxyCodeLine{92     uint16\_t port;             }
+\DoxyCodeLine{93     map<string, string> users; }
+\DoxyCodeLine{94     \textcolor{keywordtype}{int} socket;                }
+\DoxyCodeLine{95     \textcolor{keywordtype}{int} client;                }
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SERVER\_H}}
+
+\end{DoxyCode}

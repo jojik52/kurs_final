@@ -1,0 +1,140 @@
+\begin{theindex}
+
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/code/arguments.h}, 
+		\hyperpage{40}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/code/errors.h}, 
+		\hyperpage{38}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/code/rw.h}, 
+		\hyperpage{41}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/code/server.h}, 
+		\hyperpage{42}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/code/sha1.h}, 
+		\hyperpage{41}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/unit/arguments.h}, 
+		\hyperpage{40}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/unit/errors.h}, 
+		\hyperpage{37}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/unit/rw.h}, 
+		\hyperpage{41}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/unit/server.h}, 
+		\hyperpage{42}
+  \item {/home/student/Документы/busigin/MUBypass/doxygen/unit/sha1.h}, 
+		\hyperpage{41}
+
+  \indexspace
+
+  \item {AcceptConnectionError}, \hyperpage{7}
+  \item {authentication}
+    \subitem {Server}, \hyperpage{26}
+  \item {averange}
+    \subitem {Server}, \hyperpage{26, 27}
+
+  \indexspace
+
+  \item {BindSocketError}, \hyperpage{7}
+    \subitem {BindSocketError}, \hyperpage{7, 8}
+
+  \indexspace
+
+  \item {connect}
+    \subitem {Server}, \hyperpage{27}
+  \item {CreateSocketError}, \hyperpage{8}
+    \subitem {CreateSocketError}, \hyperpage{9}
+
+  \indexspace
+
+  \item {getAddress}
+    \subitem {Parser}, \hyperpage{17}
+    \subitem {Server}, \hyperpage{27, 28}
+  \item {getFunc}
+    \subitem {UnknownError}, \hyperpage{33}
+  \item {getMessage}
+    \subitem {UnknownError}, \hyperpage{34}
+  \item {getName}
+    \subitem {UnknownError}, \hyperpage{34}
+  \item {getPathToLog}
+    \subitem {Parser}, \hyperpage{17, 18}
+  \item {getPathToUsers}
+    \subitem {Parser}, \hyperpage{18}
+  \item {getPort}
+    \subitem {Parser}, \hyperpage{18, 19}
+    \subitem {Server}, \hyperpage{28}
+  \item {getTime}
+    \subitem {UnknownError}, \hyperpage{35}
+  \item {getUsers}
+    \subitem {Server}, \hyperpage{28, 29}
+
+  \indexspace
+
+  \item {InvalidArgumentError}, \hyperpage{10}
+    \subitem {InvalidArgumentError}, \hyperpage{10}
+  \item {InvalidAuthDataFormatError}, \hyperpage{11}
+    \subitem {InvalidAuthDataFormatError}, \hyperpage{11, 12}
+  \item {InvalidLineFormat}, \hyperpage{12}
+    \subitem {InvalidLineFormat}, \hyperpage{13}
+  \item {InvalidLoginOrPasswordError}, \hyperpage{14}
+    \subitem {InvalidLoginOrPasswordError}, \hyperpage{14}
+  \item {isCritical}
+    \subitem {UnknownError}, \hyperpage{35}
+
+  \indexspace
+
+  \item {ListenSocketError}, \hyperpage{15}
+    \subitem {ListenSocketError}, \hyperpage{15, 16}
+
+  \indexspace
+
+  \item {parse}
+    \subitem {Parser}, \hyperpage{19}
+  \item {Parser}, \hyperpage{16}
+    \subitem {getAddress}, \hyperpage{17}
+    \subitem {getPathToLog}, \hyperpage{17, 18}
+    \subitem {getPathToUsers}, \hyperpage{18}
+    \subitem {getPort}, \hyperpage{18, 19}
+    \subitem {parse}, \hyperpage{19}
+
+  \indexspace
+
+  \item {ReadWriteError}, \hyperpage{20}
+    \subitem {ReadWriteError}, \hyperpage{20, 21}
+  \item {RecvDataError}, \hyperpage{21}
+    \subitem {RecvDataError}, \hyperpage{22}
+
+  \indexspace
+
+  \item {SendDataError}, \hyperpage{23}
+    \subitem {SendDataError}, \hyperpage{23}
+  \item {Server}, \hyperpage{24}
+    \subitem {authentication}, \hyperpage{26}
+    \subitem {averange}, \hyperpage{26, 27}
+    \subitem {connect}, \hyperpage{27}
+    \subitem {getAddress}, \hyperpage{27, 28}
+    \subitem {getPort}, \hyperpage{28}
+    \subitem {getUsers}, \hyperpage{28, 29}
+    \subitem {Server}, \hyperpage{25}
+    \subitem {shutdown}, \hyperpage{29}
+    \subitem {startup}, \hyperpage{29, 30}
+  \item {shutdown}
+    \subitem {Server}, \hyperpage{29}
+  \item {ShutdownSocketError}, \hyperpage{30}
+    \subitem {ShutdownSocketError}, \hyperpage{31}
+  \item {startup}
+    \subitem {Server}, \hyperpage{29, 30}
+
+  \indexspace
+
+  \item {UnknownError}, \hyperpage{32}
+    \subitem {getFunc}, \hyperpage{33}
+    \subitem {getMessage}, \hyperpage{34}
+    \subitem {getName}, \hyperpage{34}
+    \subitem {getTime}, \hyperpage{35}
+    \subitem {isCritical}, \hyperpage{35}
+    \subitem {UnknownError}, \hyperpage{33}
+    \subitem {what}, \hyperpage{36}
+
+  \indexspace
+
+  \item {what}
+    \subitem {UnknownError}, \hyperpage{36}
+
+\end{theindex}

@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VServer: Исходный файл /home/student/Документы/busigin/MUBypass/doxygen/code/errors.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_deea9ac2ebb701b26350058d0b80c84f.html">Документы</a></li><li class="navelem"><a class="el" href="dir_65de75d4f3f31e5b2649bf422737937f.html">busigin</a></li><li class="navelem"><a class="el" href="dir_c057549a5cc9bb0bc03389808a6a9091.html">MUBypass</a></li><li class="navelem"><a class="el" href="dir_7e302c0f00752d8f2c20ded284fcfb05.html">doxygen</a></li><li class="navelem"><a class="el" href="dir_c7bcc4426407ccb96a5a7fb8c7f046b0.html">code</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">errors.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ERRORS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ERRORS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classUnknownError.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classUnknownError.html">UnknownError</a> : <span class="keyword">public</span> exception</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="classUnknownError.html#ac0397d4b5abc79c788781b880e9bd95b">UnknownError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classUnknownError.html#a9bde24d8a094388cc5d7be65dace0f48">getName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classUnknownError.html#ac874b3ce5720bb39429dbe9ea367b900">getFunc</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classUnknownError.html#a89471dc5a247358995046d4ba1278fd0">getMessage</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    time_t <a class="code hl_function" href="classUnknownError.html#a2be1e84e9e03445a62b5329a881c698e">getTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classUnknownError.html#a31da115137d20269085dca79a32ea646">isCritical</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="classUnknownError.html#adb4d4d2d7c58f78f0cc8cbef3980ff20">what</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classUnknownError.html#ad09fbc3eff1092925ddeafa28653d0a8">   61</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="classUnknownError.html#ad09fbc3eff1092925ddeafa28653d0a8">name</a> = <span class="stringliteral">&quot;UnknownError&quot;</span>; </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">string</span> func;            </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    time_t time;            </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">bool</span> is_critical;       </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">mutable</span> <span class="keywordtype">string</span> message; </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classInvalidArgumentError.html">   74</a></span><span class="keyword">class </span><a class="code hl_class" href="classInvalidArgumentError.html">InvalidArgumentError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_function" href="classInvalidArgumentError.html#a75547af892e0796c0a1a80b2f32018cd">InvalidArgumentError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// Ошибки чтения/записи</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classReadWriteError.html">   91</a></span><span class="keyword">class </span><a class="code hl_class" href="classReadWriteError.html">ReadWriteError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_function" href="classReadWriteError.html#a02b440b4b76f23aae24ab38f830284fe">ReadWriteError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classInvalidLineFormat.html">  106</a></span><span class="keyword">class </span><a class="code hl_class" href="classInvalidLineFormat.html">InvalidLineFormat</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_function" href="classInvalidLineFormat.html#a0665f7cca08f687605132b86bba7abec">InvalidLineFormat</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Ошибки сокета</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classCreateSocketError.html">  123</a></span><span class="keyword">class </span><a class="code hl_class" href="classCreateSocketError.html">CreateSocketError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_function" href="classCreateSocketError.html#a1bfca8bf673778f019f1fdaf0124ed22">CreateSocketError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classBindSocketError.html">  138</a></span><span class="keyword">class </span><a class="code hl_class" href="classBindSocketError.html">BindSocketError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>{</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_function" href="classBindSocketError.html#a9ecdcae4a13ab4730e83eb6cd99eaac5">BindSocketError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>};</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classListenSocketError.html">  153</a></span><span class="keyword">class </span><a class="code hl_class" href="classListenSocketError.html">ListenSocketError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_function" href="classListenSocketError.html#a54b0a1573f1dbd5b72be0d531c025fa8">ListenSocketError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>};</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classShutdownSocketError.html">  168</a></span><span class="keyword">class </span><a class="code hl_class" href="classShutdownSocketError.html">ShutdownSocketError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_function" href="classShutdownSocketError.html#a491a59e7200f721d9b6adbf1eb08bdfc">ShutdownSocketError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>};</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classAcceptConnectionError.html">  183</a></span><span class="keyword">class </span><a class="code hl_class" href="classAcceptConnectionError.html">AcceptConnectionError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_function" href="classAcceptConnectionError.html#a5ce0c71fe304f1594513225291089a0b">AcceptConnectionError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>};</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="classRecvDataError.html">  198</a></span><span class="keyword">class </span><a class="code hl_class" href="classRecvDataError.html">RecvDataError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>{</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_function" href="classRecvDataError.html#a47d12d0cb9c3583b5256ff37dbbfa0b8">RecvDataError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>};</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classSendDataError.html">  213</a></span><span class="keyword">class </span><a class="code hl_class" href="classSendDataError.html">SendDataError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>{</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_function" href="classSendDataError.html#aab8fe7b84ed87a5ebf4111c8f8d91d90">SendDataError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>};</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">// Ошибки аутентификации</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classInvalidAuthDataFormatError.html">  230</a></span><span class="keyword">class </span><a class="code hl_class" href="classInvalidAuthDataFormatError.html">InvalidAuthDataFormatError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>{</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <a class="code hl_function" href="classInvalidAuthDataFormatError.html#a48ef12ea50479e598942601ce87478a5">InvalidAuthDataFormatError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>};</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="classInvalidLoginOrPasswordError.html">  245</a></span><span class="keyword">class </span><a class="code hl_class" href="classInvalidLoginOrPasswordError.html">InvalidLoginOrPasswordError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classUnknownError.html">UnknownError</a></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>{</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <a class="code hl_function" href="classInvalidLoginOrPasswordError.html#abc7e4c65d04cdcbc11f883f67eccf700">InvalidLoginOrPasswordError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keywordtype">bool</span> is_critical = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>};</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">#endif </span><span class="comment">// ERRORS_H</span></div>
+<div class="ttc" id="aclassAcceptConnectionError_html"><div class="ttname"><a href="classAcceptConnectionError.html">AcceptConnectionError</a></div><div class="ttdoc">Ошибка принятия соединения.</div><div class="ttdef"><b>Definition:</b> errors.h:184</div></div>
+<div class="ttc" id="aclassAcceptConnectionError_html_a5ce0c71fe304f1594513225291089a0b"><div class="ttname"><a href="classAcceptConnectionError.html#a5ce0c71fe304f1594513225291089a0b">AcceptConnectionError::AcceptConnectionError</a></div><div class="ttdeci">AcceptConnectionError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор AcceptConnectionError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:89</div></div>
+<div class="ttc" id="aclassBindSocketError_html"><div class="ttname"><a href="classBindSocketError.html">BindSocketError</a></div><div class="ttdoc">Ошибка привязки сокета.</div><div class="ttdef"><b>Definition:</b> errors.h:139</div></div>
+<div class="ttc" id="aclassBindSocketError_html_a9ecdcae4a13ab4730e83eb6cd99eaac5"><div class="ttname"><a href="classBindSocketError.html#a9ecdcae4a13ab4730e83eb6cd99eaac5">BindSocketError::BindSocketError</a></div><div class="ttdeci">BindSocketError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор BindSocketError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:71</div></div>
+<div class="ttc" id="aclassCreateSocketError_html"><div class="ttname"><a href="classCreateSocketError.html">CreateSocketError</a></div><div class="ttdoc">Ошибка создания сокета.</div><div class="ttdef"><b>Definition:</b> errors.h:124</div></div>
+<div class="ttc" id="aclassCreateSocketError_html_a1bfca8bf673778f019f1fdaf0124ed22"><div class="ttname"><a href="classCreateSocketError.html#a1bfca8bf673778f019f1fdaf0124ed22">CreateSocketError::CreateSocketError</a></div><div class="ttdeci">CreateSocketError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор CreateSocketError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:65</div></div>
+<div class="ttc" id="aclassInvalidArgumentError_html"><div class="ttname"><a href="classInvalidArgumentError.html">InvalidArgumentError</a></div><div class="ttdoc">Ошибка некорректного аргумента.</div><div class="ttdef"><b>Definition:</b> errors.h:75</div></div>
+<div class="ttc" id="aclassInvalidArgumentError_html_a75547af892e0796c0a1a80b2f32018cd"><div class="ttname"><a href="classInvalidArgumentError.html#a75547af892e0796c0a1a80b2f32018cd">InvalidArgumentError::InvalidArgumentError</a></div><div class="ttdeci">InvalidArgumentError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор InvalidArgumentError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:45</div></div>
+<div class="ttc" id="aclassInvalidAuthDataFormatError_html"><div class="ttname"><a href="classInvalidAuthDataFormatError.html">InvalidAuthDataFormatError</a></div><div class="ttdoc">Ошибка некорректного формата данных аутентификации.</div><div class="ttdef"><b>Definition:</b> errors.h:231</div></div>
+<div class="ttc" id="aclassInvalidAuthDataFormatError_html_a48ef12ea50479e598942601ce87478a5"><div class="ttname"><a href="classInvalidAuthDataFormatError.html#a48ef12ea50479e598942601ce87478a5">InvalidAuthDataFormatError::InvalidAuthDataFormatError</a></div><div class="ttdeci">InvalidAuthDataFormatError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор InvalidAuthDataFormatError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:108</div></div>
+<div class="ttc" id="aclassInvalidLineFormat_html"><div class="ttname"><a href="classInvalidLineFormat.html">InvalidLineFormat</a></div><div class="ttdoc">Ошибка некорректного формата строки.</div><div class="ttdef"><b>Definition:</b> errors.h:107</div></div>
+<div class="ttc" id="aclassInvalidLineFormat_html_a0665f7cca08f687605132b86bba7abec"><div class="ttname"><a href="classInvalidLineFormat.html#a0665f7cca08f687605132b86bba7abec">InvalidLineFormat::InvalidLineFormat</a></div><div class="ttdeci">InvalidLineFormat(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор InvalidLineFormat.</div><div class="ttdef"><b>Definition:</b> errors.cpp:52</div></div>
+<div class="ttc" id="aclassInvalidLoginOrPasswordError_html"><div class="ttname"><a href="classInvalidLoginOrPasswordError.html">InvalidLoginOrPasswordError</a></div><div class="ttdoc">Ошибка некорректного логина или пароля.</div><div class="ttdef"><b>Definition:</b> errors.h:246</div></div>
+<div class="ttc" id="aclassInvalidLoginOrPasswordError_html_abc7e4c65d04cdcbc11f883f67eccf700"><div class="ttname"><a href="classInvalidLoginOrPasswordError.html#abc7e4c65d04cdcbc11f883f67eccf700">InvalidLoginOrPasswordError::InvalidLoginOrPasswordError</a></div><div class="ttdeci">InvalidLoginOrPasswordError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор InvalidLoginOrPasswordError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:114</div></div>
+<div class="ttc" id="aclassListenSocketError_html"><div class="ttname"><a href="classListenSocketError.html">ListenSocketError</a></div><div class="ttdoc">Ошибка прослушивания сокета.</div><div class="ttdef"><b>Definition:</b> errors.h:154</div></div>
+<div class="ttc" id="aclassListenSocketError_html_a54b0a1573f1dbd5b72be0d531c025fa8"><div class="ttname"><a href="classListenSocketError.html#a54b0a1573f1dbd5b72be0d531c025fa8">ListenSocketError::ListenSocketError</a></div><div class="ttdeci">ListenSocketError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор ListenSocketError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:77</div></div>
+<div class="ttc" id="aclassReadWriteError_html"><div class="ttname"><a href="classReadWriteError.html">ReadWriteError</a></div><div class="ttdoc">Ошибка чтения/записи.</div><div class="ttdef"><b>Definition:</b> errors.h:92</div></div>
+<div class="ttc" id="aclassReadWriteError_html_a02b440b4b76f23aae24ab38f830284fe"><div class="ttname"><a href="classReadWriteError.html#a02b440b4b76f23aae24ab38f830284fe">ReadWriteError::ReadWriteError</a></div><div class="ttdeci">ReadWriteError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор ReadWriteError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:58</div></div>
+<div class="ttc" id="aclassRecvDataError_html"><div class="ttname"><a href="classRecvDataError.html">RecvDataError</a></div><div class="ttdoc">Ошибка получения данных.</div><div class="ttdef"><b>Definition:</b> errors.h:199</div></div>
+<div class="ttc" id="aclassRecvDataError_html_a47d12d0cb9c3583b5256ff37dbbfa0b8"><div class="ttname"><a href="classRecvDataError.html#a47d12d0cb9c3583b5256ff37dbbfa0b8">RecvDataError::RecvDataError</a></div><div class="ttdeci">RecvDataError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор RecvDataError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:95</div></div>
+<div class="ttc" id="aclassSendDataError_html"><div class="ttname"><a href="classSendDataError.html">SendDataError</a></div><div class="ttdoc">Ошибка отправки данных.</div><div class="ttdef"><b>Definition:</b> errors.h:214</div></div>
+<div class="ttc" id="aclassSendDataError_html_aab8fe7b84ed87a5ebf4111c8f8d91d90"><div class="ttname"><a href="classSendDataError.html#aab8fe7b84ed87a5ebf4111c8f8d91d90">SendDataError::SendDataError</a></div><div class="ttdeci">SendDataError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор SendDataError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:101</div></div>
+<div class="ttc" id="aclassShutdownSocketError_html"><div class="ttname"><a href="classShutdownSocketError.html">ShutdownSocketError</a></div><div class="ttdoc">Ошибка завершения работы сокета.</div><div class="ttdef"><b>Definition:</b> errors.h:169</div></div>
+<div class="ttc" id="aclassShutdownSocketError_html_a491a59e7200f721d9b6adbf1eb08bdfc"><div class="ttname"><a href="classShutdownSocketError.html#a491a59e7200f721d9b6adbf1eb08bdfc">ShutdownSocketError::ShutdownSocketError</a></div><div class="ttdeci">ShutdownSocketError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор ShutdownSocketError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:83</div></div>
+<div class="ttc" id="aclassUnknownError_html"><div class="ttname"><a href="classUnknownError.html">UnknownError</a></div><div class="ttdoc">Базовый класс для всех ошибок.</div><div class="ttdef"><b>Definition:</b> errors.h:15</div></div>
+<div class="ttc" id="aclassUnknownError_html_a2be1e84e9e03445a62b5329a881c698e"><div class="ttname"><a href="classUnknownError.html#a2be1e84e9e03445a62b5329a881c698e">UnknownError::getTime</a></div><div class="ttdeci">time_t getTime() const</div><div class="ttdoc">Получает время возникновения ошибки.</div><div class="ttdef"><b>Definition:</b> errors.cpp:34</div></div>
+<div class="ttc" id="aclassUnknownError_html_a31da115137d20269085dca79a32ea646"><div class="ttname"><a href="classUnknownError.html#a31da115137d20269085dca79a32ea646">UnknownError::isCritical</a></div><div class="ttdeci">bool isCritical() const</div><div class="ttdoc">Проверяет, является ли ошибка критической.</div><div class="ttdef"><b>Definition:</b> errors.cpp:39</div></div>
+<div class="ttc" id="aclassUnknownError_html_a89471dc5a247358995046d4ba1278fd0"><div class="ttname"><a href="classUnknownError.html#a89471dc5a247358995046d4ba1278fd0">UnknownError::getMessage</a></div><div class="ttdeci">string getMessage() const</div><div class="ttdoc">Получает сообщение об ошибке.</div><div class="ttdef"><b>Definition:</b> errors.cpp:29</div></div>
+<div class="ttc" id="aclassUnknownError_html_a9bde24d8a094388cc5d7be65dace0f48"><div class="ttname"><a href="classUnknownError.html#a9bde24d8a094388cc5d7be65dace0f48">UnknownError::getName</a></div><div class="ttdeci">string getName() const</div><div class="ttdoc">Получает имя ошибки.</div><div class="ttdef"><b>Definition:</b> errors.cpp:19</div></div>
+<div class="ttc" id="aclassUnknownError_html_ac0397d4b5abc79c788781b880e9bd95b"><div class="ttname"><a href="classUnknownError.html#ac0397d4b5abc79c788781b880e9bd95b">UnknownError::UnknownError</a></div><div class="ttdeci">UnknownError(const string &amp;func, bool is_critical=false)</div><div class="ttdoc">Конструктор UnknownError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:3</div></div>
+<div class="ttc" id="aclassUnknownError_html_ac874b3ce5720bb39429dbe9ea367b900"><div class="ttname"><a href="classUnknownError.html#ac874b3ce5720bb39429dbe9ea367b900">UnknownError::getFunc</a></div><div class="ttdeci">string getFunc() const</div><div class="ttdoc">Получает имя функции, в которой возникла ошибка.</div><div class="ttdef"><b>Definition:</b> errors.cpp:24</div></div>
+<div class="ttc" id="aclassUnknownError_html_ad09fbc3eff1092925ddeafa28653d0a8"><div class="ttname"><a href="classUnknownError.html#ad09fbc3eff1092925ddeafa28653d0a8">UnknownError::name</a></div><div class="ttdeci">string name</div><div class="ttdoc">Имя ошибки.</div><div class="ttdef"><b>Definition:</b> errors.h:61</div></div>
+<div class="ttc" id="aclassUnknownError_html_adb4d4d2d7c58f78f0cc8cbef3980ff20"><div class="ttname"><a href="classUnknownError.html#adb4d4d2d7c58f78f0cc8cbef3980ff20">UnknownError::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdoc">Получает сообщение об ошибке для вывода.</div><div class="ttdef"><b>Definition:</b> errors.cpp:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

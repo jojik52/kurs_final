@@ -1,0 +1,75 @@
+\hypertarget{classAcceptConnectionError}{}\doxysection{Класс Accept\+Connection\+Error}
+\label{classAcceptConnectionError}\index{AcceptConnectionError@{AcceptConnectionError}}
+
+
+Ошибка принятия соединения.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+
+
+Граф наследования\+:Accept\+Connection\+Error\+:
+% FIG 0
+
+
+Граф связей класса Accept\+Connection\+Error\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAcceptConnectionError_a5ce0c71fe304f1594513225291089a0b}{Accept\+Connection\+Error}} (const string \&func, bool is\+\_\+critical=false)
+\begin{DoxyCompactList}\small\item\em Конструктор \mbox{\hyperlink{classAcceptConnectionError}{Accept\+Connection\+Error}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAcceptConnectionError_a5ce0c71fe304f1594513225291089a0b}{Accept\+Connection\+Error}} (const string \&func, bool is\+\_\+critical=false)
+\begin{DoxyCompactList}\small\item\em Конструктор \mbox{\hyperlink{classAcceptConnectionError}{Accept\+Connection\+Error}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Ошибка принятия соединения. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classAcceptConnectionError_a5ce0c71fe304f1594513225291089a0b}\label{classAcceptConnectionError_a5ce0c71fe304f1594513225291089a0b}} 
+\index{AcceptConnectionError@{AcceptConnectionError}!AcceptConnectionError@{AcceptConnectionError}}
+\index{AcceptConnectionError@{AcceptConnectionError}!AcceptConnectionError@{AcceptConnectionError}}
+\doxysubsubsection{\texorpdfstring{AcceptConnectionError()}{AcceptConnectionError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Accept\+Connection\+Error\+::\+Accept\+Connection\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{func,  }\item[{bool}]{is\+\_\+critical = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор \mbox{\hyperlink{classAcceptConnectionError}{Accept\+Connection\+Error}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func} & Имя функции, в которой возникла ошибка. \\
+\hline
+{\em is\+\_\+critical} & Флаг критичности ошибки. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAcceptConnectionError_a5ce0c71fe304f1594513225291089a0b}\label{classAcceptConnectionError_a5ce0c71fe304f1594513225291089a0b}} 
+\index{AcceptConnectionError@{AcceptConnectionError}!AcceptConnectionError@{AcceptConnectionError}}
+\index{AcceptConnectionError@{AcceptConnectionError}!AcceptConnectionError@{AcceptConnectionError}}
+\doxysubsubsection{\texorpdfstring{AcceptConnectionError()}{AcceptConnectionError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Accept\+Connection\+Error\+::\+Accept\+Connection\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{func,  }\item[{bool}]{is\+\_\+critical = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор \mbox{\hyperlink{classAcceptConnectionError}{Accept\+Connection\+Error}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func} & Имя функции, в которой возникла ошибка. \\
+\hline
+{\em is\+\_\+critical} & Флаг критичности ошибки. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/code/errors.\+h\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/unit/errors.\+h\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/code/errors.\+cpp\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/unit/errors.\+cpp\end{DoxyCompactItemize}

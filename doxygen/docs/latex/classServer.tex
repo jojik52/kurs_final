@@ -1,0 +1,353 @@
+\hypertarget{classServer}{}\doxysection{Класс Server}
+\label{classServer}\index{Server@{Server}}
+
+
+Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServer_ae5bfcabb5af26d249ade89eaea3747a2}{Server}} (const string \&address, uint16\+\_\+t port, const map$<$ string, string $>$ \&users)
+\begin{DoxyCompactList}\small\item\em Конструктор \mbox{\hyperlink{classServer}{Server}}. \end{DoxyCompactList}\item 
+string \& \mbox{\hyperlink{classServer_ae5f29703e1e449f7e37c7599d122ae81}{get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает адрес сервера. \end{DoxyCompactList}\item 
+uint16\+\_\+t \& \mbox{\hyperlink{classServer_a9474b488bb1768f05cea4da80bc221e4}{get\+Port}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает порт сервера. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \& \mbox{\hyperlink{classServer_a16b6be51b26ea83409e327032f17bf2b}{get\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает логины и пароли пользователей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_aaa7517710dd809ba4d965eb83801fd05}{startup}} ()
+\begin{DoxyCompactList}\small\item\em Запускает сервер. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a28be9df75b3a622f95297ebf812f83f8}{shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Останавливает сервер. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a0bd7069e79b4d5268f0947079e1af54a}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Ожидает подключения клиента. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a188dcac0307d35339dca155de6c4568c}{authentication}} ()
+\begin{DoxyCompactList}\small\item\em Аутентифицирует клиента. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_ae08a03b67bc5070715742278c69f4a1e}{averange}} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет среднее арифметическое значений, полученных от клиента. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classServer_ae5bfcabb5af26d249ade89eaea3747a2}{Server}} (const string \&address, uint16\+\_\+t port, const map$<$ string, string $>$ \&users)
+\begin{DoxyCompactList}\small\item\em Конструктор \mbox{\hyperlink{classServer}{Server}}. \end{DoxyCompactList}\item 
+string \& \mbox{\hyperlink{classServer_ae5f29703e1e449f7e37c7599d122ae81}{get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает адрес сервера. \end{DoxyCompactList}\item 
+uint16\+\_\+t \& \mbox{\hyperlink{classServer_a9474b488bb1768f05cea4da80bc221e4}{get\+Port}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает порт сервера. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \& \mbox{\hyperlink{classServer_a16b6be51b26ea83409e327032f17bf2b}{get\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает логины и пароли пользователей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_aaa7517710dd809ba4d965eb83801fd05}{startup}} ()
+\begin{DoxyCompactList}\small\item\em Запускает сервер. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a28be9df75b3a622f95297ebf812f83f8}{shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Останавливает сервер. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a0bd7069e79b4d5268f0947079e1af54a}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Ожидает подключения клиента. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a188dcac0307d35339dca155de6c4568c}{authentication}} ()
+\begin{DoxyCompactList}\small\item\em Аутентифицирует клиента. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_ae08a03b67bc5070715742278c69f4a1e}{averange}} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет среднее арифметическое значений, полученных от клиента. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для представления сервера, способного обрабатывать подключения и аутентификацию пользователей. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classServer_ae5bfcabb5af26d249ade89eaea3747a2}\label{classServer_ae5bfcabb5af26d249ade89eaea3747a2}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{const string \&}]{address,  }\item[{uint16\+\_\+t}]{port,  }\item[{const map$<$ string, string $>$ \&}]{users }\end{DoxyParamCaption})}
+
+
+
+Конструктор \mbox{\hyperlink{classServer}{Server}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & Адрес сервера. \\
+\hline
+{\em port} & Порт сервера. \\
+\hline
+{\em users} & Логины и пароли пользователей. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServer_ae5bfcabb5af26d249ade89eaea3747a2}\label{classServer_ae5bfcabb5af26d249ade89eaea3747a2}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{const string \&}]{address,  }\item[{uint16\+\_\+t}]{port,  }\item[{const map$<$ string, string $>$ \&}]{users }\end{DoxyParamCaption})}
+
+
+
+Конструктор \mbox{\hyperlink{classServer}{Server}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & Адрес сервера. \\
+\hline
+{\em port} & Порт сервера. \\
+\hline
+{\em users} & Логины и пароли пользователей. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classServer_a188dcac0307d35339dca155de6c4568c}\label{classServer_a188dcac0307d35339dca155de6c4568c}} 
+\index{Server@{Server}!authentication@{authentication}}
+\index{authentication@{authentication}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{authentication()}{authentication()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Аутентифицирует клиента. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRecvDataError}{Recv\+Data\+Error}}} & Если данные не могут быть получены от клиента. \\
+\hline
+{\em \mbox{\hyperlink{classInvalidAuthDataFormatError}{Invalid\+Auth\+Data\+Format\+Error}}} & Если формат данных аутентификации некорректен. \\
+\hline
+{\em \mbox{\hyperlink{classInvalidLoginOrPasswordError}{Invalid\+Login\+Or\+Password\+Error}}} & Если логин или пароль некорректны. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_a188dcac0307d35339dca155de6c4568c}\label{classServer_a188dcac0307d35339dca155de6c4568c}} 
+\index{Server@{Server}!authentication@{authentication}}
+\index{authentication@{authentication}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{authentication()}{authentication()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Аутентифицирует клиента. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRecvDataError}{Recv\+Data\+Error}}} & Если данные не могут быть получены от клиента. \\
+\hline
+{\em \mbox{\hyperlink{classInvalidAuthDataFormatError}{Invalid\+Auth\+Data\+Format\+Error}}} & Если формат данных аутентификации некорректен. \\
+\hline
+{\em \mbox{\hyperlink{classInvalidLoginOrPasswordError}{Invalid\+Login\+Or\+Password\+Error}}} & Если логин или пароль некорректны. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_ae08a03b67bc5070715742278c69f4a1e}\label{classServer_ae08a03b67bc5070715742278c69f4a1e}} 
+\index{Server@{Server}!averange@{averange}}
+\index{averange@{averange}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{averange()}{averange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::averange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вычисляет среднее арифметическое значений, полученных от клиента. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRecvDataError}{Recv\+Data\+Error}}} & Если данные не могут быть получены от клиента. \\
+\hline
+{\em \mbox{\hyperlink{classSendDataError}{Send\+Data\+Error}}} & Если данные не могут быть отправлены клиенту. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_ae08a03b67bc5070715742278c69f4a1e}\label{classServer_ae08a03b67bc5070715742278c69f4a1e}} 
+\index{Server@{Server}!averange@{averange}}
+\index{averange@{averange}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{averange()}{averange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::averange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вычисляет среднее арифметическое значений, полученных от клиента. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRecvDataError}{Recv\+Data\+Error}}} & Если данные не могут быть получены от клиента. \\
+\hline
+{\em \mbox{\hyperlink{classSendDataError}{Send\+Data\+Error}}} & Если данные не могут быть отправлены клиенту. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_a0bd7069e79b4d5268f0947079e1af54a}\label{classServer_a0bd7069e79b4d5268f0947079e1af54a}} 
+\index{Server@{Server}!connect@{connect}}
+\index{connect@{connect}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ожидает подключения клиента. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classAcceptConnectionError}{Accept\+Connection\+Error}}} & Если подключение не может быть принято. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_a0bd7069e79b4d5268f0947079e1af54a}\label{classServer_a0bd7069e79b4d5268f0947079e1af54a}} 
+\index{Server@{Server}!connect@{connect}}
+\index{connect@{connect}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ожидает подключения клиента. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classAcceptConnectionError}{Accept\+Connection\+Error}}} & Если подключение не может быть принято. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_ae5f29703e1e449f7e37c7599d122ae81}\label{classServer_ae5f29703e1e449f7e37c7599d122ae81}} 
+\index{Server@{Server}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string \& Server\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает адрес сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+string\& Адрес сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServer_ae5f29703e1e449f7e37c7599d122ae81}\label{classServer_ae5f29703e1e449f7e37c7599d122ae81}} 
+\index{Server@{Server}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string \& Server\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает адрес сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+string\& Адрес сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServer_a9474b488bb1768f05cea4da80bc221e4}\label{classServer_a9474b488bb1768f05cea4da80bc221e4}} 
+\index{Server@{Server}!getPort@{getPort}}
+\index{getPort@{getPort}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t \& Server\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает порт сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+uint16\+\_\+t\& Порт сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServer_a9474b488bb1768f05cea4da80bc221e4}\label{classServer_a9474b488bb1768f05cea4da80bc221e4}} 
+\index{Server@{Server}!getPort@{getPort}}
+\index{getPort@{getPort}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t \& Server\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает порт сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+uint16\+\_\+t\& Порт сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServer_a16b6be51b26ea83409e327032f17bf2b}\label{classServer_a16b6be51b26ea83409e327032f17bf2b}} 
+\index{Server@{Server}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily map$<$ string, string $>$ \& Server\+::get\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает логины и пароли пользователей. 
+
+\begin{DoxyReturn}{Возвращает}
+map$<$string, string$>$\& Логины и пароли пользователей. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServer_a16b6be51b26ea83409e327032f17bf2b}\label{classServer_a16b6be51b26ea83409e327032f17bf2b}} 
+\index{Server@{Server}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily map$<$ string, string $>$ \& Server\+::get\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает логины и пароли пользователей. 
+
+\begin{DoxyReturn}{Возвращает}
+map$<$string, string$>$\& Логины и пароли пользователей. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServer_a28be9df75b3a622f95297ebf812f83f8}\label{classServer_a28be9df75b3a622f95297ebf812f83f8}} 
+\index{Server@{Server}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Останавливает сервер. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classShutdownSocketError}{Shutdown\+Socket\+Error}}} & Если сокет не может быть корректно закрыт. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_a28be9df75b3a622f95297ebf812f83f8}\label{classServer_a28be9df75b3a622f95297ebf812f83f8}} 
+\index{Server@{Server}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Останавливает сервер. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classShutdownSocketError}{Shutdown\+Socket\+Error}}} & Если сокет не может быть корректно закрыт. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_aaa7517710dd809ba4d965eb83801fd05}\label{classServer_aaa7517710dd809ba4d965eb83801fd05}} 
+\index{Server@{Server}!startup@{startup}}
+\index{startup@{startup}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{startup()}{startup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Запускает сервер. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCreateSocketError}{Create\+Socket\+Error}}} & Если сокет не может быть создан. \\
+\hline
+{\em \mbox{\hyperlink{classBindSocketError}{Bind\+Socket\+Error}}} & Если сокет не может быть привязан к адресу. \\
+\hline
+{\em \mbox{\hyperlink{classListenSocketError}{Listen\+Socket\+Error}}} & Если сокет не может быть переведен в режим прослушивания. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_aaa7517710dd809ba4d965eb83801fd05}\label{classServer_aaa7517710dd809ba4d965eb83801fd05}} 
+\index{Server@{Server}!startup@{startup}}
+\index{startup@{startup}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{startup()}{startup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Запускает сервер. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCreateSocketError}{Create\+Socket\+Error}}} & Если сокет не может быть создан. \\
+\hline
+{\em \mbox{\hyperlink{classBindSocketError}{Bind\+Socket\+Error}}} & Если сокет не может быть привязан к адресу. \\
+\hline
+{\em \mbox{\hyperlink{classListenSocketError}{Listen\+Socket\+Error}}} & Если сокет не может быть переведен в режим прослушивания. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/code/server.\+h\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/unit/server.\+h\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/code/server.\+cpp\item 
+/home/student/Документы/busigin/\+MUBypass/doxygen/unit/server.\+cpp\end{DoxyCompactItemize}

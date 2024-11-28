@@ -1,0 +1,47 @@
+digraph "UnknownError"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="UnknownError",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Базовый класс для всех ошибок."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="AcceptConnectionError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAcceptConnectionError.html",tooltip="Ошибка принятия соединения."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="BindSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBindSocketError.html",tooltip="Ошибка привязки сокета."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="CreateSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCreateSocketError.html",tooltip="Ошибка создания сокета."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="InvalidArgumentError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidArgumentError.html",tooltip="Ошибка некорректного аргумента."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="InvalidAuthDataFormatError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidAuthDataFormatError.html",tooltip="Ошибка некорректного формата данных аутентификации."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="InvalidLineFormat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidLineFormat.html",tooltip="Ошибка некорректного формата строки."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="InvalidLoginOrPasswordError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInvalidLoginOrPasswordError.html",tooltip="Ошибка некорректного логина или пароля."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="ListenSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classListenSocketError.html",tooltip="Ошибка прослушивания сокета."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="ReadWriteError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classReadWriteError.html",tooltip="Ошибка чтения/записи."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="RecvDataError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRecvDataError.html",tooltip="Ошибка получения данных."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="SendDataError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSendDataError.html",tooltip="Ошибка отправки данных."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="ShutdownSocketError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShutdownSocketError.html",tooltip="Ошибка завершения работы сокета."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}
